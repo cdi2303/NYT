@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <title>서비스 문의 접수</title>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
-    <link rel="stylesheet" href="assets/css/common.css?v=<?= date('Ymd-His') ?>>">
+    <link rel="stylesheet" href="assets/css/common.css?v=<?= date('Ymd-His') ?>">
 
     <style>
         /* 내부 <style>에서는 "레이아웃/장식"만 정의, input/button에 영향 X */
@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <section class="formbox">
         <div class="section-title">문의 즉시 접수</div>
-        <form action="api_lead_insert.php" method="POST" accept-charset="UTF-8">
+        <form action="post_test.php" method="POST" accept-charset="UTF-8">
             <input type="text" name="name" placeholder="성함" required/>
             <input type="text" name="biz" placeholder="업종/필요기능 요약" required/>
             <input type="email" name="email" placeholder="이메일 주소" required/>
@@ -147,7 +147,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p>PRG 리다이렉션 적용</p>
         </div>
     </section>
-
 </main>
 
 <footer class="footer">
